@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+	font-family: Verdana, Geneva, sans-serif;
+	background-color:slategrey;
+}
+h1 {
+	float:right;
+	font-family: 'Times New Roman', Times, serif;
+	word-break: break-all;
+}
+
+.search {
+	width: 27%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top:50px;
+}
+
+.search-box {
+	flex-grow: 1;
+	height: 30px;
+	font-size: 1em;
+	background-color: silver;
+}
+
+.a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.list {
+	order: 1;
+	flex-grow: 1;
+	background-color:grey;
+}
+
+.map {
+	order: 2;
+	flex-grow: 8;
+	background-color:lightblue;
+	text-align: center;
+	height: 600px;
+}
+
+.r {
+	margin: 0;
+	padding: 0;
+}
+
+.p {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background-color:darkolivegreen;
+}
+
+.p:hover{
+	cursor: pointer;
+	background-color: lightgreen;
+}
+
+.brand {
+	width:0%;
+}
+
+
+
+
+@media only screen and (max-device-width : 800px), only screen and (max-width : 800px)  {
+
+.a {
+	flex-direction: column;
+}
+
+.search{
+	position: fixed;
+	z-index: 1;
+}
+
+.brand {
+	width:30%;
+	font-size: 3.0em;
+	text-align: center;
+	padding: auto;
+	box-sizing: border-box;
+	background-color: #055;
+}
+
+.clicking{
+	background-color: grey;
+}
+
+.brand:hover{
+	cursor: pointer;
+	background-color: lightskyblue;
+}
+
+.list{
+	height: 0;
+}
+
+.sliding{
+	height: 100%;
+	position: fixed;
+	top: 64px;
+	width: 100%;
+	z-index: 1;
+}
+
+
+.search-box, .list {
+	font-size: 1.5em;
+}
+
+
+
+
+}
