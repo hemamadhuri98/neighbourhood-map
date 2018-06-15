@@ -13,14 +13,14 @@ I used knockout file and css file for styling.
 
 #### The "initialLocations" is a list of all the places' basic location info (name, lattitude longitude).
 
-# As for the model:
+# The model:
 I use "Location" object.
 1. It will get all basic info(include address website) from Foursquare's API
 2. It will change all the info into a unified format.
 3. Using ko.computed to determine whether to show the place on the map.
 4. Add "click" event on the "marker" to show basic info.
 
-# As for the viewmodel:
+## View of project:
 1. It will create the map on screen
 2. Will make the "Location" Object and put them into a "ko.observableArray"
 3. "this.filteredList" is "ko.computed" function which will determine whether to show the place on the map.
