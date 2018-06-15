@@ -11,7 +11,7 @@ although none of the places listed require a reservation.)
 Open project.html to run the web application.
 I used knockout file and css file for styling.
 
-####The "initialLocations" is a list of all the places' basic location info (name, lattitude longitude).
+#### The "initialLocations" is a list of all the places' basic location info (name, lattitude longitude).
 
 # As for the model:
 I use "Location" object.
