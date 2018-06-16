@@ -211,9 +211,9 @@ function AppViewModel() {
     //responsive design
 	this.clickBrand = (function(){
 	  // If menu is already showing, slide it up. Otherwise, slide it down.
-	  list.toggleClass('sliding');
+	  $('.list').toggleClass('sliding');
 	  //If the "brand" is clicked, change the background color
-	  brand.toggleClass('clicking');
+	  $('.brand').toggleClass('clicking');
 
 	});
 
