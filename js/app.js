@@ -83,7 +83,7 @@ var Location = function(data) {
     //visible determines whether to show the places on the map
 	this.visible = ko.observable(true);
 
-	var foursquareURL = 'https://api.foursquare.com/v2/venues/search?ll='+ this.lat + ',' + this.long + '&client_id=' + clientID + '&client_secret=' + clientSecret + '&v=20160118' + '&query=' + this.name;
+	var foursquareURL = 'https://api.foursquare.com/v2/venues/search?ll='+ this.lat + ',' + this.lng + '&client_id=' + clientID + '&client_secret=' + clientSecret + '&v=20160118' + '&query=' + this.name;
     
     //Using Foursquare API to get info about the places
 	$.getJSON(foursquareURL).done(function(data) {
@@ -207,7 +207,7 @@ function AppViewModel() {
 	}, this);
 
 	this.mapElem = document.getElementById('map');
-	//this.mapElem.style.height = window.innerHeight - 50;
+	this.mapElem.style.height = window.innerHeight - 50;
     //responsive design
 	this.clickBrand = (function(){
 	  // If menu is already showing, slide it up. Otherwise, slide it down.
